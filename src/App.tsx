@@ -188,16 +188,20 @@ const App: React.FC = () =>{
               <div className={`font-bold text-4xl  bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold  ${isVisible.project ? '' : 'hidden'}`}>
                 Các dự án đạt được
               </div>
-              <div className='flex flex-row grid-cols-4 mt-10 w-3/4'>
-                <div className='border border-gray-600 w-[420px] h-[420px] flex justify-center items-center flex-col rounded-lg shadow-lg shadow-indigo-600'>
 
-                 <img src="/assets/web.png" alt="website" className='w-96'/>
+                <div className='flex flex-row grid-cols-4 mt-10 w-3/4'>
+                  <a href='https://github.com/hoad3/Dao_Ngoc_Hoa'>
+                    <button className='transition ease-in duration-300  hover:-translate-y-1 hover:scale-105 hover:shadow-2xl shadow-indigo-600'>
+                      <div className='border border-gray-600 w-[420px] h-[420px] flex justify-center items-center flex-col rounded-lg shadow-lg shadow-indigo-600'>
+                       <img src="/assets/web.png" alt="website" className='w-96'/>
 
-                  <div className='mt-5'>
-                    <h1 className='font-bold text-2xl text-black'>Website bán hàng</h1>
-                    <h2 className='font-serif text-2xl text-black w-96 mt-5'>Website bán hàng là ứng dụng web cho phép người dùng đặt mua và đăng bán các mặt hàng</h2>
-                  </div>
-                </div>
+                        <div className='mt-5'>
+                          <h1 className='font-bold text-2xl text-black'>Website bán hàng</h1>
+                          <h2 className='font-serif text-2xl text-black w-96 mt-5'>Website bán hàng là ứng dụng web cho phép người dùng đặt mua và đăng bán các mặt hàng</h2>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
                 <div>
 
                 </div>
