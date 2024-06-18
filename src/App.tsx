@@ -28,7 +28,7 @@ const App: React.FC = () =>{
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        smoothScroll((this as HTMLAnchorElement).getAttribute('href') as string);
+        smoothScroll((anchor as HTMLAnchorElement).getAttribute('href') as string);
       });
     });
   }, []);
@@ -87,17 +87,35 @@ const App: React.FC = () =>{
 
   const { ref: homeRef } = useInView({
 
-    onChange: (inView, entry) => handleIntersection(entry, 'home'),
+    onChange: (inView, entry) => {
+      if(inView){
+        handleIntersection(entry, 'home')
+      }
+    },
     threshold: 0.5,
   });
 
   const { ref: projectRef } = useInView({
-    onChange: (inView, entry) => handleIntersection(entry, 'project'),
-    threshold: 0.5,
+    onChange: (inView, entry) => {
+      if (inView) {
+        handleIntersection(entry, 'project');
+      }
+    },
+      threshold: 0.5,
+
   });
 
+
+  // const { ref: skillRef } = useInView({
+  //   onChange: (inView, entry) => handleIntersection(entry, 'skill'),
+  //   threshold: 0.5,
+  // });
   const { ref: skillRef } = useInView({
-    onChange: (inView, entry) => handleIntersection(entry, 'skill'),
+    onChange: (inView, entry) => {
+      if (inView) {
+        handleIntersection(entry, 'skill');
+      }
+    },
     threshold: 0.5,
   });
 
