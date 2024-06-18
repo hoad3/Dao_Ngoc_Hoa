@@ -190,7 +190,7 @@ const App: React.FC = () =>{
               </div>
               <div className='flex flex-row grid-cols-4 mt-10 w-3/4'>
                 <div className='border border-gray-600 w-[420px] h-[420px] flex justify-center items-center flex-col rounded-lg shadow-lg shadow-indigo-600'>
-                 <img src="/src/web.png" alt="website" className='w-96'/>
+                 <img src="/src/assets/react.svg" alt="website" className='w-96'/>
                   
 
                   <div className='mt-5'>
