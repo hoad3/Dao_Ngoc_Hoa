@@ -248,7 +248,7 @@ const App: React.FC = () =>{
                       <span className='font-bold text-3xl ml-2 text-indigo-600'>Ngoài ra tôi cũng có kiến thức và kỹ năng giải quyết vấn đề về  </span>
                       <span className='font-bold text-3xl  bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold ml-1'>cấu trúc dữ liệu & giải thuật</span>
                       <span className='font-bold text-3xl ml-2 text-indigo-600'>và các kỹ năng về</span>
-                      <span className='font-bold text-3xl  bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold ml-2'>OPP</span>
+                      <span className='font-bold text-3xl  bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold ml-2'>OPP.</span>
                     </div>
                     <div className='font-bold text-3xl  bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold mt-28 w-auto '>
                       <span>Kỹ năng</span>
