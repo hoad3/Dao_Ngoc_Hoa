@@ -255,7 +255,7 @@ const App: React.FC = () =>{
 
                       <div className='flex'>
                         <div className='flex flex-col mt-5 w-full justify-center items-center border-t-4 border-indigo-500'>
-                          <div className=' font-bold text-3xl text-indigo-600 flex flex-row h-auto w-auto border-b-4 border-indigo-500 mt-5 h-14'>
+                          <div className=' font-bold text-3xl text-indigo-600 flex flex-row h-auto w-auto  mt-5 h-14'>
                             <div className='ml-5 w-48'>
                               <span className='font-bold text-3xl text-indigo-600 '>Ngôn ngữ</span>
                             </div>
