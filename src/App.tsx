@@ -40,7 +40,6 @@ const App: React.FC = () =>{
       const now = new Date();
       const hours = now.getUTCHours(); // Sử dụng giờ UTC
       const vietnamutc = (hours + 7) % 24;
-      console.log("gio",vietnamutc)
       if (vietnamutc < 12 && vietnamutc > 5) {
         setGreeting('Chào buổi sáng');
       } else if (vietnamutc < 18 && vietnamutc > 12) {
@@ -215,18 +214,19 @@ const App: React.FC = () =>{
                       </div>
                     </button>
                   </a>
+                      <a href='https://github.com/hoad3' className='m-10 '>
+                        <button className='transition ease-in duration-300  hover:-translate-y-1 hover:scale-105 hover:shadow-2xl shadow-indigo-600'>
+                          <div className='border border-gray-600 w-[420px] h-[420px] flex justify-center items-center flex-col rounded-lg shadow-lg shadow-indigo-600'>
+                            <span className='font-bold text-2xl text-black'>Xem thêm tại</span>
+                            <FaGithub size='30' className=' m-5 transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 hover:bg-gray-100 duration-300 w-11 h-11 rounded-full font-serif' />
+                          </div>
+                            </button>
+                             </a>
                 <div>
 
                 </div>
               </div>
-              <div className='flex justify-center items-center flex-col'>
-                <span className='font-bold text-4xl h-14 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent mt-5'>Xem thêm tại</span>
-                <div>
-                  <a href='https://github.com/hoad3'>
-                    <FaGithub size='30' className=' m-5 transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 hover:bg-gray-100 duration-300 w-11 h-11 rounded-full font-serif' />
-                  </a>
-                </div>
-              </div>
+
             </div>
             <div id='skill' ref={skillRef} className="h-auto flex flex-col items-center justify-center bg-gradient-to-b from-purple-400 to-pink-400 ">
               {/*<h2 className={`text-4xl font-bold ${isVisible.skill ? '' : 'hidden'}`}></h2>*/}
@@ -277,7 +277,7 @@ const App: React.FC = () =>{
                               <img src='/logos/typescript.svg' className='w-16 mt-5'/>
                               <img src='/logos/javascript.svg' className='w-16 mt-5 mb-10'/>
                             </div>
-                            <div className='flex flex-col ml-20'>
+                            <div className='flex flex-col ml-20 '>
                               <img src='/logos/tailwindcss.svg' className='w-16 mt-5'/>
                               <img src='/logos/dotnet.svg' className='w-16 mt-5'/>
                               <img src='/logos/react.svg' className='w-16 mt-5'/>
