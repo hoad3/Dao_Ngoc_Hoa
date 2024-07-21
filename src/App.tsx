@@ -11,6 +11,7 @@ import { useInView } from "react-intersection-observer";
 import Home from "./component/Home.tsx";
 import Product from "./component/Product.tsx";
 import AboutMe from "./component/AboutMe.tsx";
+import {FaListUl} from "react-icons/fa";
 
 const App: React.FC = () =>{
 
@@ -117,10 +118,7 @@ const App: React.FC = () =>{
       threshold: 0.5,
 
   });
-  // const { ref: skillRef } = useInView({
-  //   onChange: (inView, entry) => handleIntersection(entry, 'skill'),
-  //   threshold: 0.5,
-  // });
+
   const { ref: skillRef } = useInView({
     onChange: (inView, entry) => {
       if (inView) {
@@ -132,41 +130,44 @@ const App: React.FC = () =>{
 
   return (
       <div>
-        <div className={`fixed top-0 w-full z-[9999] h-auto flex justify-center items-center transition-all duration-300 ${backgroundColor}`}
-             data-aos='fade-down'>
-          <div className='w-11/12 md:w-3/4'>
-            <div className='flex flex-col mt-5 md:flex-row justify-between items-center'>
-              <div className='w-full md:w-3/4 flex justify-start items-center text-2xl font-bold'>
+
+        <div className={`fixed top-0 w-screen z-[9999] h-auto flex justify-center items-center transition-all duration-300 ${backgroundColor}`} data-aos='fade-down'>
+          <div className='w-full md:w-3/4'>
+            <nav className='flex flex-row mt-5justify-between items-center'>
+              <a className='w-full h-14 md:w-3/4 flex justify-start items-center text-2xl font-bold' href='#home'>
                 Đào Ngọc Hòa
-              </div>
-              <div className='flex flex-col md:flex-row w-full justify-center items-center'>
-                <a className='w-36 text-xl md:text-2xl font-bold flex justify-center items-center mt-2 md:mt-0' href="#home">Trang chủ</a>
-                <a className='w-36 text-xl md:text-2xl font-bold flex justify-center items-center mt-2 md:mt-0' href="#project">Sản phẩm</a>
-                <a className='w-[100px] text-xl md:text-2xl font-bold flex justify-center items-center mt-2 md:mt-0' href="#skill">Về tôi</a>
-                <a className='w-[100px] text-xl md:text-2xl font-bold flex justify-center items-center mt-2 md:mt-0 hover:text-indigo-600 transition ease-in duration-100' href='mailto:hoad3579@gmail.com'>Liên hệ</a>
-              </div>
-            </div>
+              </a>
+              <input id ='check' type = 'checkbox'/>
+              <label htmlFor='check' className='checkbt' ><FaListUl /></label>
+
+
+              <li className='li-bar '>
+                <a className='item-list-top' href="#home">Trang chủ</a>
+                <a className='item-list' href="#project">Sản phẩm</a>
+                <a className='item-list' href="#skill">Về tôi</a>
+                <a className='item-list-botton' href='mailto:hoad3579@gmail.com'>Liên hệ</a>
+              </li>
+            </nav>
           </div>
         </div>
-        <div>
-          <div className="relative">
-            <div id='home' ref={homeRef} className=" h-screen flex flex-col items-center justify-start bg-gradient-to-b from-green-200 to-indigo-400 mt-10" data-aos="fade-up" data-aos-delay="0">
-              <h1 className='text-3xl md:text-4xl font-bold mt-36 w-11/12 md:w-3/4 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent' data-aos='fade-left' data-aos-delay='200'>{greeting} hiện tại là: {currentTime}</h1>
-              <Home />
-            </div>
-            <div id='project' ref={projectRef} className="flex flex-col items-center justify-center bg-gradient-to-b from-indigo-400 to-purple-400">
-              <div className={`mt-14 font-bold text-3xl md:text-4xl bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent ${isVisible.project ? '' : 'hidden'}`}>
-                Các dự án đạt được
+          <div className="relative w-full">
+              <div id='home' ref={homeRef} className=" h-screen flex flex-col items-center justify-start bg-gradient-to-b from-green-200 to-indigo-400 mt-10 " data-aos="fade-up" data-aos-delay="0">
+                <h1 className='flex justify-center items-center rounded-lg border border-cyan-500 text-center text-2xl md:text-4xl font-bold mt-16 w-2/4 md:w-1/4 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent shadow shadow-cyan-950 shadow-lg' data-aos='fade-left' data-aos-delay='200'>{greeting} hiện tại là: {currentTime}</h1>
+                <Home />
               </div>
-              <Product/>
+          </div>
+        <div id='project' ref={projectRef} className='container-element w-full h-full bg-gradient-to-b from-indigo-400 to-purple-400'>
+          <div>
+            <div className={`mt-14 flex justify-center font-bold text-3xl md:text-4xl bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent ${isVisible.project ? '' : 'hidden'}`}>
+              Các dự án đạt được
             </div>
-            <div id='skill' ref={skillRef} className="h-auto flex flex-col items-center justify-center bg-gradient-to-b from-purple-400 to-pink-400 ">
+            <Product/>
+          </div>
+        </div>
+            <div id='skill' ref={skillRef} className="h-auto flex flex-col items-center justify-center w-full md:w-full bg-gradient-to-b from-purple-400 to-pink-400">
               <AboutMe />
             </div>
-          </div>
-        </div>
       </div>
-
   );
 };
 

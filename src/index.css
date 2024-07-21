@@ -2,75 +2,202 @@
 @tailwind components;
 @tailwind utilities;
 
-.img{
-    width: 24rem;
+body {
+
+    margin: 0;
+}
+
+#check{
+    display: none;
+}
+
+.checkbt{
+    display: none;
+}
+
+.li-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.item-list-top{
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.item-list-botton{
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+    /*border-top-width: 1px;*/
+    /*border-color: black;*/
+}
+.item-list{
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+
 
 }
-/*:root {*/
-/*  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
-/*  line-height: 1.5;*/
-/*  font-weight: 400;*/
+@media (max-width: 768px) {
+    .li-bar{
+        background: linear-gradient(to right, #4f46e5, #ec4899);
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top:50px;
+        width: 150px;
+        left: 280px;
 
-/*  color-scheme: light dark;*/
-/*  color: rgba(255, 255, 255, 0.87);*/
-/*  background-color: #242424;*/
+    }
+    .item-list{
+        width: 100%;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+        border-top-width: 1px;
+        border-color: black;
+    }
+    .item-list-top{
+        width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    .item-list-botton{
+        width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        border-top-width: 1px;
+        border-color: black;
+    }
+    .checkbt{
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+    #check:checked ~ .li-bar{
+        display: none;
+    }
+    
+}
+.container-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media  (max-width: 760px){
+    .container-element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
-/*  font-synthesis: none;*/
-/*  text-rendering: optimizeLegibility;*/
-/*  -webkit-font-smoothing: antialiased;*/
-/*  -moz-osx-font-smoothing: grayscale;*/
-/*}*/
+.container-element-product{
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Mặc định là hàng ngang (flex row) */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ chỗ */
+    justify-content: center;
 
-/*a {*/
-/*  font-weight: 500;*/
-/*  color: #646cff;*/
-/*  text-decoration: inherit;*/
-/*}*/
-/*a:hover {*/
-/*  color: #535bf2;*/
-/*}*/
+}
+/* Sử dụng media query để thay đổi cách hiển thị trên màn hình nhỏ (điện thoại) */
+@media  {
+    .container-element-product {
 
-/*body {*/
-/*  margin: 0;*/
-/*  display: flex;*/
-/*  place-items: center;*/
-/*  min-width: 320px;*/
-/*  min-height: 100vh;*/
-/*}*/
+        display: flex;
+        flex-direction: row; /* Chuyển sang hàng dọc (flex column) trên màn hình nhỏ */
+        justify-content: center;
+        align-items: center;
+    }
+}
 
-/*h1 {*/
-/*  font-size: 3.2em;*/
-/*  line-height: 1.1;*/
-/*}*/
+.element-product {
+    border-width: 1px;
+    border-color: rgb(75 85 99 / 1); /* border-color with opacity 1 */
+    overflow: auto;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    0 10px 15px -3px rgba(79, 70, 229, 0.75),
+    0 4px 6px -2px rgba(79, 70, 229, 0.75); /* shadow-lg combined with shadow-indigo-600 */
+}
+@media  {
+    .element-product{
+        border-width: 1px;
+        border-color: rgb(75 85 99 / 1); /* border-color with opacity 1 */
+        overflow: auto;
+        width: 320px;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05),
+        0 10px 15px -3px rgba(79, 70, 229, 0.75),
+        0 4px 6px -2px rgba(79, 70, 229, 0.75); /* shadow-lg combined with shadow-indigo-600 */
+    }
 
-/*button {*/
-/*  border-radius: 8px;*/
-/*  border: 1px solid transparent;*/
-/*  padding: 0.6em 1.2em;*/
-/*  font-size: 1em;*/
-/*  font-weight: 500;*/
-/*  font-family: inherit;*/
-/*  background-color: #1a1a1a;*/
-/*  cursor: pointer;*/
-/*  transition: border-color 0.25s;*/
-/*}*/
-/*button:hover {*/
-/*  border-color: #646cff;*/
-/*}*/
-/*button:focus,*/
-/*button:focus-visible {*/
-/*  outline: 4px auto -webkit-focus-ring-color;*/
-/*}*/
+}
 
-/*@media (prefers-color-scheme: light) {*/
-/*  :root {*/
-/*    color: #213547;*/
-/*    background-color: #ffffff;*/
-/*  }*/
-/*  a:hover {*/
-/*    color: #747bff;*/
-/*  }*/
-/*  button {*/
-/*    background-color: #f9f9f9;*/
-/*  }*/
-/*}*/
+.button-element-product {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    width: 100%;
+}
+
+
+.button-element-product:hover {
+    transform: translateY(-0.25rem) scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.75); /* shadow-2xl */
+    --tw-shadow-colored: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(79, 70, 229, 0.75); /* shadow-indigo-600 */
+}
+
+
+
