@@ -1,4 +1,6 @@
 import i18n from 'i18next';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import { initReactI18next } from 'react-i18next';
 import HEADER_EN from './locales/en/headerEN.json'
 import HEADER_VI from './locales/vi/headerVI.json'

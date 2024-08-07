@@ -14,6 +14,8 @@ import AboutMe from "./component/AboutMe.tsx";
 import {FaListUl} from "react-icons/fa";
 // import i18n from 'i18next'
 import i18n from "./i18n.tsx";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import {useTranslation} from "react-i18next";
 import { US, VN } from 'country-flag-icons/react/1x1'; // Cờ dạng 1x1
 const App: React.FC = () =>{
