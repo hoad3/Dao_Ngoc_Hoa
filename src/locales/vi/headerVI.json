@@ -1,0 +1,54 @@
+{
+  "header": {
+    "tittle": "Đào Ngọc Hòa",
+    "mainpage": "Trang chủ",
+    "projectsTitle": "Các dự án",
+    "Aboutme": "về tôi",
+    "contact": "Liên hệ"
+  },
+  "timebox": {
+    "timetext_1": "Chào buổi sáng",
+    "timetext_2": "Chào buổi chiều",
+    "timetext_3": "Chào buổi tối",
+    "timetext_4": "hiện tại là:"
+  },
+  "homepage": {
+    "text_1": "Tôi tên",
+    "text_2": "Đào Ngọc Hòa.",
+    "text_3": "Tôi là",
+    "text_4": "sinh viên đại học.",
+    "text_5": "tại đại học",
+    "text_6": "Tài nguyên và Môi trường TP.HCM, Việt Nam."
+  },
+  "projectpage": {
+    "tetx_1": "Shoping Web",
+    "tetx_2": "Shoping Web là ứng dụng web cho phép người dùng đặt mua và đăng bán các mặt hàng, trang web được viết bằng C# cho phần back-end và React-typescript cho phần front-end.",
+    "tetx_3": "Newtalker",
+    "tetx_4": "Newtalker là phần mềm crawler dữ liệu một cách tự động từ các bài báo và thực hiện tóm tắt văn bản, thống kê từ khóa trong bài báo đó việc crawl dữ liệu được thực hiện trên chương trình được viết bằng C# và xử lý tóm tắt và thống kê được viết bằng Python.",
+    "tetx_5": "Xem thêm tại",
+    "text_6": "Các dự án đạt được"
+
+  },
+  "aboutme": {
+    "text_1": "Về tôi",
+    "text_2": "Xin chào! tôi tên",
+    "text_3": "Đào Ngọc Hòa,",
+    "text_4": "một sinh viên đại học thuộc chuyên ngành",
+    "text_5": "công nghệ phần mềm",
+    "text_6": "tại đại học Tài nguyên và Môi trường Hồ Chí Minh.",
+    "text_7": "Tôi có kinh nghiệm làm",
+    "text_8": "ứng dụng web full-stack.",
+    "text_9": "Ngoài ra tôi cũng có kiến thức và kỹ năng giải quyết vấn đề về",
+    "text_10": "cấu trúc dữ liệu & giải thuật",
+    "text_11": "và các kỹ năng về",
+    "text_12": "OPP.",
+    "text_13": "Kỹ năng",
+    "text_14": "Ngôn ngữ",
+    "text_15": "Công nghệ",
+    "text_16": "Cơ sở dữ liệu",
+    "text_17": "Công cụ"
+
+  }
+
+
+}

@@ -1,0 +1,56 @@
+{
+  "header": {
+    "tittle": "Dao Ngoc Hoa",
+    "mainpage": "Home",
+    "projectsTitle": "Projects",
+    "Aboutme":"About me",
+    "contact": "Contact"
+
+
+  },
+  "timebox": {
+    "timetext_1": "Good morning",
+    "timetext_2": "Good afternoon",
+    "timetext_3": "Good evening",
+    "timetext_4": "the present is:"
+  },
+  "homepage": {
+    "text_1": "My name is",
+    "text_2": "Đào Ngọc Hòa.",
+    "text_3": "I am",
+    "text_4": "a university student.",
+    "text_5": "I study at",
+    "text_6": "Ho Chi Minh City University of Natural Resources and Environment, Vietnam."
+  },
+
+  "projectpage": {
+    "tetx_1": "Shoping Web",
+    "tetx_2": "Shoping Web is a web application that allows users to order and sell items. The website is written in C# for the back-end and React-Typescript for the front-end.",
+    "tetx_3": "Newtalker",
+    "tetx_4": "Newtalker is a program that automatically crawls data from articles and performs text summarization and keyword statistics. The data crawling is done using a program written in C#, while text summarization and statistics are handled by a program written in Python.",
+    "tetx_5": "See more at",
+    "text_6": "Projects achieved"
+
+  },
+  "aboutme": {
+    "text_1": "About me",
+    "text_2": "Hello! My name is",
+    "text_3": "Đao Ngoc Hoa,",
+    "text_4": "a university student majoring",
+    "text_5": "in Software Engineering",
+    "text_6": "at Ho Chi Minh City University of Natural Resources and Environment.",
+    "text_7": "I have experience in ",
+    "text_8": "full-stack web development.",
+    "text_9": "Additionally, I possess knowledge and skills in ",
+    "text_10": "data structures and algorithms,",
+    "text_11": "as well as ",
+    "text_12": "OOP (Object-Oriented Programming) skills.",
+    "text_13": "Skill",
+    "text_14": "Language",
+    "text_15": "Technology",
+    "text_16": "Database",
+    "text_17": "Tools"
+
+  }
+
+}

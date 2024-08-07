@@ -1,24 +1,27 @@
 import {FaGithub} from "react-icons/fa6";
 import {MdOutlineEmail} from "react-icons/md";
+import {useTranslation} from "react-i18next";
+
 
 const Home: React.FC = () => {
+    const {t} = useTranslation()
     return (
         <div className='flex justify-center w-3/4' data-aos="fade-up" data-aos-delay="0">
             <div className='flex justify-start flex-col'>
                 <h1 className="text-4xl font-bold mt-5" data-aos='fade-left' data-aos-delay='200'></h1>
                 <h2 className="mt-3 text-2xl md:text-4xl font-bold relative w-full" data-aos='fade-up' data-aos-delay="400">
-                    <span className="relative">Tôi tên</span>
-                    <span className='ml-2 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent'>Đào Ngọc Hòa.</span>
+                    <span className="relative">{t('homepage.text_1')}</span>
+                    <span className='ml-2 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent'>{t('homepage.text_2')}</span>
                 </h2>
                 <h2 className="mt-3 text-2xl md:text-4xl" data-aos="fade-up" data-aos-delay="600">
-                    <span className='mr-3 font-bold'>Tôi là</span>
+                    <span className='mr-3 font-bold'>{t('homepage.text_3')}</span>
                     <span className='mr-3 relative font-bold text-transparent'>
-                    <span className='bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent'>sinh viên đại học.</span>
+                    <span className='bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent'>{t('homepage.text_4')}</span>
                     </span>
                 </h2>
                 <h2 className="mt-3 text-2xl md:text-4xl" data-aos="fade-up" data-aos-delay="800">
-                    <span className='font-bold'>tại đại học</span>
-                    <span className='ml-3 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold'>Tài nguyên và Môi trường TP.HCM, Việt Nam.</span>
+                    <span className='font-bold'>{t('homepage.text_5')}</span>
+                    <span className='ml-3 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent font-bold'>{t('homepage.text_6')}</span>
                 </h2>
                 <div className='flex flex-row mt-5 border border-gray-600 w-44 rounded-lg'>
                     <div>
