@@ -151,6 +151,7 @@ body {
 }
 
 .element-product {
+    margin: 20px;
     border-width: 1px;
     border-color: rgb(75 85 99 / 1); /* border-color with opacity 1 */
     overflow: auto;
@@ -166,13 +167,14 @@ body {
     0 10px 15px -3px rgba(79, 70, 229, 0.75),
     0 4px 6px -2px rgba(79, 70, 229, 0.75); /* shadow-lg combined with shadow-indigo-600 */
 }
-@media  {
+@media  (max-width: 760px){
     .element-product{
+        margin: 0;
         border-width: 1px;
         border-color: rgb(75 85 99 / 1); /* border-color with opacity 1 */
         overflow: auto;
-        width: 320px;
-        height: 320px;
+        width: 290px;
+        height: 290px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -187,18 +189,20 @@ body {
 }
 
 .button-element-product {
+    border-radius: 20px;
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
     width: 100%;
-    margin: 20px;
 }
-@media  {
+@media  (max-width: 760px){
     .button-element-product{
         transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
         width: 100%;
+        margin: 0;
+
     }
 
 }
