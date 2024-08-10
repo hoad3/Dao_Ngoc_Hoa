@@ -29,7 +29,9 @@
     "tetx_3": "Newtalker",
     "tetx_4": "Newtalker is a program that automatically crawls data from articles and performs text summarization and keyword statistics. The data crawling is done using a program written in C#, while text summarization and statistics are handled by a program written in Python.",
     "tetx_5": "See more at",
-    "text_6": "Projects achieved"
+    "text_6": "Projects achieved",
+    "text_7":"Kairos",
+    "text_8": "Kairos is an Android software written in Flutter on Android Studio, designed to help users view dates."
 
   },
   "aboutme": {

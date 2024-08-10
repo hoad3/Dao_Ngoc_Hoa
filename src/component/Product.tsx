@@ -32,7 +32,7 @@ const Product: React.FC = () => {
                     </div>
                 </button>
             </a>
-            <a className='mt-10' href='https://github.com/hoad3/NewStalker' >
+            <a className='mt-10' href='https://github.com/hoad3/Kairos' >
                 <button className='button-element-product'>
                     <div className='element-product'>
                         <img src="/assets/kairos.png" alt="website" className='w-44 mt-48'/>
