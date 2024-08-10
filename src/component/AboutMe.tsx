@@ -49,6 +49,7 @@ const AboutMe: React.FC = () => {
                                             <img src='/logos/react.svg' className='w-16 mt-5'/>
                                             <img src='/logos/vite.svg' className='w-16 mt-5'/>
                                             <img src='/logos/nodedotjs.svg' className='w-16 mt-5'/>
+                                            <img src='/logos/flutter.png' className='w-16 mt-5'/>
                                         </li>
                                     </div>
                                     <div className='flex flex-col items-center w-48 m-5'>
@@ -65,6 +66,7 @@ const AboutMe: React.FC = () => {
                                             <img src='/logos/jetbrains.svg' className='w-16 mt-5'/>
                                             <img src='/logos/visualstudiocode.svg' className='w-16 mt-5'/>
                                             <img src='/logos/visualstudio.svg' className='w-16 mt-5'/>
+                                            <img src='/logos/androidstudio.svg'className='w-16 mt-5'/>
                                         </li>
                                     </div>
                                 </div>
