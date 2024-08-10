@@ -32,6 +32,18 @@ const Product: React.FC = () => {
                     </div>
                 </button>
             </a>
+            <a className='mt-10' href='https://github.com/hoad3/NewStalker' >
+                <button className='button-element-product'>
+                    <div className='element-product'>
+                        <img src="/assets/kairos.png" alt="website" className='w-44 mt-48'/>
+                        <div className='mt-5'>
+                            <h1 className='font-bold text-2xl text-black'>{t('projectpage.text_7')}</h1>
+                            <h2 className='font-serif text-sm text-black md:text-2xl w-auto mt-5'>{t('projectpage.text_8')}</h2>
+                        </div>
+                    </div>
+                </button>
+            </a>
+
             <a className='mt-10' href='https://github.com/hoad3'>
                 <button className='button-element-product'>
                     <div className='element-product'>

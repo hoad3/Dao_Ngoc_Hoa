@@ -26,7 +26,9 @@
     "tetx_3": "Newtalker",
     "tetx_4": "Newtalker là phần mềm crawler dữ liệu một cách tự động từ các bài báo và thực hiện tóm tắt văn bản, thống kê từ khóa trong bài báo đó việc crawl dữ liệu được thực hiện trên chương trình được viết bằng C# và xử lý tóm tắt và thống kê được viết bằng Python.",
     "tetx_5": "Xem thêm tại",
-    "text_6": "Các dự án đạt được"
+    "text_6": "Các dự án đạt được",
+    "text_7": "Kairos",
+    "text_8": "Kairos là phần mềm Android được bằng Flutter trên Android stuido với mục đích giúp người dùng có thể xem ngày tháng"
 
   },
   "aboutme": {
