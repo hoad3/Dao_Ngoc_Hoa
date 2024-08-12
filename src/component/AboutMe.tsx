@@ -49,10 +49,10 @@ const AboutMe: React.FC = () => {
                                             <img src='/logos/react.svg' className='w-16 mt-5'/>
                                             <img src='/logos/vite.svg' className='w-16 mt-5'/>
                                             <img src='/logos/nodedotjs.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/flutter.png' className='w-16 mt-5'/>
+                                            <img src='/logos/flutter.svg' className='w-16 mt-5'/>
                                         </li>
                                     </div>
-                                    <div className='flex flex-col items-center w-48 m-5'>
+                                    <div className='aboutmeitem'>
                                         <span className='font-bold text-3xl text-indigo-600 justify-center'>{t('aboutme.text_16')}</span>
                                         <li className='flex flex-col justify-center items-center'>
                                             <img src='/logos/postgresql.svg' className='w-16 mt-5'/>
