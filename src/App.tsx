@@ -53,14 +53,12 @@ const App: React.FC = () =>{
       const seconds = now.getUTCSeconds();
       const vietnamutc = (hours + 7) % 24;
       let greetingMessage = '';
-      if (vietnamutc < 12 && vietnamutc > 5) {
-
-        greetingMessage = t('timebox.timetext_1');
-      } else if (vietnamutc < 18 && vietnamutc > 12) {
-        greetingMessage = t('timebox.timetext_2');
-      }
-      else {
-        greetingMessage = t('timebox.timetext_3');
+      if (vietnamutc >= 6 && vietnamutc < 12) {
+        greetingMessage = t('timebox.timetext_1'); // Morning
+      } else if (vietnamutc >= 12 && vietnamutc < 18) {
+        greetingMessage = t('timebox.timetext_2'); // Afternoon
+      } else {
+        greetingMessage = t('timebox.timetext_3'); // Evening/Night
       }
 
       setGreeting(greetingMessage);
