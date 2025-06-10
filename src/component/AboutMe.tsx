@@ -29,7 +29,7 @@ const AboutMe: React.FC = () => {
                         <span className='font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent ml-2'>{t('aboutme.text_12')}</span>
                     </div>
                 </div>
-                <div className='w-1/2 bg-gradient-to-br from-fuchsia-300 to-purple-200 rounded-2xl shadow-xl p-8 mt-4'>
+                <div className='w-1/2 bg-gradient-to-br from-fuchsia-300 to-purple-200 rounded-2xl shadow-xl p-8 mb-10'>
                     <h2 className='font-extrabold text-3xl bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent mb-8 text-center'>
                         {t('aboutme.text_13')}
                     </h2>
