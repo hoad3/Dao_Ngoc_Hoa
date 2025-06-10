@@ -28,8 +28,11 @@
     "tetx_5": "Xem thêm tại",
     "text_6": "Các dự án đạt được",
     "text_7": "Kairos",
-    "text_8": "Kairos là phần mềm Android được viết bằng Flutter trên Android stuido với mục đích giúp người dùng có thể xem ngày tháng(ứng dụng này đang trong giai đoạn phát triển)"
-
+    "text_8": "Kairos là phần mềm Android được viết bằng Flutter trên Android stuido với mục đích giúp người dùng có thể xem ngày tháng(ứng dụng này đang trong giai đoạn phát triển)",
+    "text_9": "Drawbattle",
+    "text_10": "Drawbattle là dự án trò chơi sử dụng Websocket. Người chơi chia làm 2 bên và tiến hành tô màu trong khoảng thời gian nhất định, khi kết thúc khoảng thời gian cho phép ai tô được nhiều nhất sẽ giành chiến thắng. ",
+    "text_11": "Book Store",
+    "text_12": "Book Store là trang web quản lý việc bán sách, được phát triển bằng ASP.Net MVC sử dụng Template có sẵn cho phần giao diện của ứng dụng."
   },
   "aboutme": {
     "text_1": "Về tôi",

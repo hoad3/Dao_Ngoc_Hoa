@@ -5,20 +5,22 @@ import {useTranslation} from "react-i18next";
 
 
 const AboutMe: React.FC = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <div className='flex justify-start items-start w-auto'>
-            <div className='flex flex-col justify-center items-center'>
-                <h1 className='font-bold text-3xl text-indigo-600 mt-36'>{t('aboutme.text_1')}</h1>
-                <div className='w-96 md:w-3/4'>
-                    <div className='mt-5 text-2xl md:text-4xl'>
+            <div className='flex flex-col justify-center items-center w-full'>
+                <h1 className='font-extrabold text-4xl md:text-5xl text-transparent bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text mb-10 mt-36 text-center drop-shadow-lg'>
+                    {t('aboutme.text_1')}
+                </h1>
+                <div className='w-full md:w-3/4 bg-gradient-to-br from-fuchsia-300 to-purple-200 rounded-2xl shadow-xl p-8 mb-10'>
+                    <div className='text-xl md:text-2xl font-medium text-gray-800 leading-relaxed text-center'>
                         <span className='font-bold text-indigo-600'>{t('aboutme.text_2')}</span>
                         <span className='font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent ml-2'>{t('aboutme.text_3')}</span>
                         <span className='font-bold ml-2 text-indigo-600'>{t('aboutme.text_4')}</span>
                         <span className='font-bold ml-2 text-indigo-600'>{t('aboutme.text_5')}</span>
                         <span className='font-bold ml-2 text-indigo-600'>{t('aboutme.text_6')}</span>
                     </div>
-                    <div className='mt-5 text-2xl md:text-4xl'>
+                    <div className='mt-5 text-xl md:text-2xl font-medium text-gray-800 leading-relaxed text-center'>
                         <span className='font-bold text-indigo-600'>{t('aboutme.text_7')}</span>
                         <span className='font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent ml-2'>{t('aboutme.text_8')}</span>
                         <span className='font-bold ml-2 text-indigo-600'>{t('aboutme.text_9')}</span>
@@ -26,51 +28,53 @@ const AboutMe: React.FC = () => {
                         <span className='font-bold ml-2 text-indigo-600'>{t('aboutme.text_11')}</span>
                         <span className='font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent ml-2'>{t('aboutme.text_12')}</span>
                     </div>
-                    <div className='font-bold text-3xl bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent mt-28 w-auto'>
-                        <span>{t('aboutme.text_13')}</span>
-                        <div>
-                            <div className='flex flex-col mt-5 w-full justify-center items-center border-t-4 border-indigo-500'>
-                                <div className='font-bold text-3xl text-indigo-600 justify-center  h-auto w-auto mt-5 flex flex-col md:flex-row'>
-                                    <div className='flex flex-col items-center m-5 w-48'>
-                                        <span className='font-bold text-3xl text-indigo-600'>{t('aboutme.text_14')}</span>
-                                        <li className='flex flex-col ml-5 grid-cols-4 gap-4'>
-                                            <img src='/logos/java-ar21.svg' className='h-32 w-36'/>
-                                            <img src='/logos/csharp.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/python.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/typescript.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/javascript.svg' className='w-16 mt-5 mb-10'/>
-                                        </li>
-                                    </div>
-                                    <div className='flex flex-col items-center h-96 w-48 m-5 mb-16'>
-                                        <span className='font-bold text-3xl text-indigo-600 flex justify-center'>{t('aboutme.text_15')}</span>
-                                        <li className='flex justify-center flex-col items-center'>
-                                            <img src='/logos/tailwindcss.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/dotnet.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/react.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/vite.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/nodedotjs.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/flutter.svg' className='w-16 mt-5'/>
-                                        </li>
-                                    </div>
-                                    <div className='aboutmeitem'>
-                                        <span className='font-bold text-3xl text-indigo-600 justify-center'>{t('aboutme.text_16')}</span>
-                                        <li className='flex flex-col justify-center items-center'>
-                                            <img src='/logos/postgresql.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/mysql.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/microsoft-sql-server-logo-svgrepo-com.svg' className='w-20 mt-5'/>
-                                        </li>
-                                    </div>
-                                    <div className='flex flex-col items-center w-48 m-5'>
-                                        <span className='font-bold text-3xl text-indigo-600 justify-center'>{t('aboutme.text_17')}</span>
-                                        <li className='flex flex-col justify-center items-center'>
-                                            <img src='/logos/jetbrains.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/visualstudiocode.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/visualstudio.svg' className='w-16 mt-5'/>
-                                            <img src='/logos/androidstudio.svg'className='w-16 mt-5'/>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div className='w-1/2 bg-gradient-to-br from-fuchsia-300 to-purple-200 rounded-2xl shadow-xl p-8 mt-4'>
+                    <h2 className='font-extrabold text-3xl bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent mb-8 text-center'>
+                        {t('aboutme.text_13')}
+                    </h2>
+                    <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+                        {/* Language */}
+                        <div className='flex flex-col items-center'>
+                            <span className='font-bold text-2xl text-indigo-600 mb-4'>{t('aboutme.text_14')}</span>
+                            <ul className='flex flex-col items-center gap-3'>
+                                <li><img src='/logos/java-ar21.svg' className='h-12 w-16'/></li>
+                                <li><img src='/logos/csharp.svg' className='w-10'/></li>
+                                <li><img src='/logos/python.svg' className='w-10'/></li>
+                                <li><img src='/logos/typescript.svg' className='w-10'/></li>
+                                <li><img src='/logos/javascript.svg' className='w-10 mb-2'/></li>
+                            </ul>
+                        </div>
+                        {/* Technology */}
+                        <div className='flex flex-col items-center'>
+                            <span className='font-bold text-2xl text-indigo-600 mb-4'>{t('aboutme.text_15')}</span>
+                            <ul className='flex flex-col items-center gap-3'>
+                                <li><img src='/logos/tailwindcss.svg' className='w-10'/></li>
+                                <li><img src='/logos/dotnet.svg' className='w-10'/></li>
+                                <li><img src='/logos/react.svg' className='w-10'/></li>
+                                <li><img src='/logos/vite.svg' className='w-10'/></li>
+                                <li><img src='/logos/nodedotjs.svg' className='w-10'/></li>
+                                <li><img src='/logos/flutter.svg' className='w-10'/></li>
+                            </ul>
+                        </div>
+                        {/* Database */}
+                        <div className='flex flex-col items-center'>
+                            <span className='font-bold text-2xl text-indigo-600 mb-4'>{t('aboutme.text_16')}</span>
+                            <ul className='flex flex-col items-center gap-3'>
+                                <li><img src='/logos/postgresql.svg' className='w-12'/></li>
+                                <li><img src='/logos/mysql.svg' className='w-12'/></li>
+                                <li><img src='/logos/microsoft-sql-server-logo-svgrepo-com.svg' className='w-16'/></li>
+                            </ul>
+                        </div>
+                        {/* Tools */}
+                        <div className='flex flex-col items-center'>
+                            <span className='font-bold text-2xl text-indigo-600 mb-4'>{t('aboutme.text_17')}</span>
+                            <ul className='flex flex-col items-center gap-3'>
+                                <li><img src='/logos/jetbrains.svg' className='w-10'/></li>
+                                <li><img src='/logos/visualstudiocode.svg' className='w-10'/></li>
+                                <li><img src='/logos/visualstudio.svg' className='w-10'/></li>
+                                <li><img src='/logos/androidstudio.svg' className='w-10'/></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

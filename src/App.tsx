@@ -1,6 +1,3 @@
-
-
-
 import React, {useEffect, useState} from 'react';
 // import { FaGithub } from 'react-icons/fa';
 
@@ -139,7 +136,7 @@ const App: React.FC = () =>{
   };
 
   return (
-      <div>
+      <div className="relative">
 
         <div className={`fixed top-0 w-screen z-[9999] h-auto flex justify-center items-center transition-all duration-300 ${backgroundColor}`} data-aos='fade-down'>
           <div className='w-full md:w-3/4'>

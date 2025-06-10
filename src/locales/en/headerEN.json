@@ -31,8 +31,11 @@
     "tetx_5": "See more at",
     "text_6": "Projects achieved",
     "text_7":"Kairos",
-    "text_8": "Kairos is an Android software written in Flutter on Android Studio, designed to help users view dates(This application is currently being developed)."
-
+    "text_8": "Kairos is an Android software written in Flutter on Android Studio, designed to help users view dates(This application is currently being developed).",
+    "text_9": "Drawbattle",
+    "text_10": "Drawbattle is a game project using Websocket. Players are divided into 2 sides and proceed to color within a certain period of time, when the time is up, whoever colors the most will win.",
+    "text_11": "Book Store",
+    "text_12": "Book Store is a book sales management website, developed with ASP.Net MVC using available Templates for the application interface."
   },
   "aboutme": {
     "text_1": "About me",
