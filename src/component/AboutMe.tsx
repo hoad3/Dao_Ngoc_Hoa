@@ -74,6 +74,7 @@ const AboutMe: React.FC = () => {
                                 <li><img src='/logos/visualstudiocode.svg' className='w-10'/></li>
                                 <li><img src='/logos/visualstudio.svg' className='w-10'/></li>
                                 <li><img src='/logos/androidstudio.svg' className='w-10'/></li>
+                                <li><img src='/logos/docker.svg'/></li>
                             </ul>
                         </div>
                     </div>
